@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "8002eff84ee40683",
+    "type": "split",
+    "children": [
+      {
+        "id": "89068af2c8851332",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2ccf3a075d7c15b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29af2b906b657524",
+    "type": "split",
+    "children": [
+      {
+        "id": "b225ef4b58ca5b4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c984bb5836b2ff5a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5412d76c21472e03",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "872d03f7e2c0b442",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "af905697b0f6bebb",
+    "type": "split",
+    "children": [
+      {
+        "id": "80fac503379cea0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0f5a0c16daea060",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Source/REDACTED-pep2_sistope-1-2023.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for REDACTED-pep2_sistope-1-2023"
+            }
+          },
+          {
+            "id": "c471862267007fa4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sistemas Operativos/Unidad 2/Preparando PEP 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Preparando PEP 2"
+            }
+          },
+          {
+            "id": "c95d4a19813e7aea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b364354ede32f678",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sistemas Operativos/Unidad 1/Ayudantía - Procesos.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Ayudantía - Procesos"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-kanban:Create new board": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "callout-manager:Insert Callout": false
+    }
+  },
+  "active": "c984bb5836b2ff5a",
+  "lastOpenFiles": [
+    "Apuntes_Nivel5/README.md",
+    "Apuntes_Nivel5",
+    "Sistemas Operativos/Unidad 2/Semáforos.md",
+    "Sistemas Operativos/Unidad 2/Concurrencia y Sincronización.md",
+    "Sistemas Operativos/Unidad 2/Deadlock e Inanición.md",
+    "Sistemas Operativos/Unidad 1/Procesos.md",
+    "Sistemas Operativos/Unidad 1/Ejercicios para PEP 1.md",
+    "Sistemas Operativos/Unidad 1/O(1) planificador de Linux.md",
+    "Sistemas Operativos/Unidad 1/Planificador del Procesador.md",
+    "Sistemas Operativos/Unidad 1/Pipes.md",
+    "Sistemas Operativos/Unidad 1/Introducción a Sistemas Operativos.md",
+    "Sistemas Operativos/Unidad 1/Hebras.md",
+    "Sistemas Operativos/Unidad 3/Administración de IO y Scheduling de Disco.md",
+    "Sistemas Operativos/Unidad 3/Administración de Memoria.md",
+    "Sistemas Operativos/Unidad 3/Ejercicios.md",
+    "Sistemas Operativos/Unidad 3/PEP 3 (No se cuando).md",
+    "Sistemas Operativos/Unidad 3/PEP 3 (2-2023).md",
+    "Teoría de la Computación/Resumen PEP 2.md",
+    "Teoría de la Computación/Lógica - Primera Parte.md",
+    "Teoría de la Computación/Deducción Natural - Lógica Proposicional.md",
+    "Taller de Programación/Tarea 1.md",
+    "Taller de Programación/Introducción al Curso.md",
+    "Estadística Computacional/PEP 2/Resumen PEP 2.md",
+    "Estadística Computacional/PEP 2/Prueba de Hipótesis de una Sola Muestra.md",
+    "Estadística Computacional/PEP 1/Distribución para Variables Aleatorias Continuas.md",
+    "Sistemas Operativos/Unidad 2/Hebras.md",
+    "Sistemas Operativos/Unidad 3/Checklist PEP 3.md",
+    "Source/Pasted image 20250109092713.png",
+    "Source/Pasted image 20250108225613.png",
+    "Source/Pasted image 20250108223743.png",
+    "Source/Pasted image 20250108194219.png",
+    "Source/Pasted image 20250108192353.png",
+    "Source/Pasted image 20250108190803.png",
+    "Source/Pasted image 20250108184659.png",
+    "Source/Pasted image 20250108183616.png",
+    "Source/Pasted image 20250108183310.png",
+    "Source/Pasted image 20250108182030.png",
+    "Source/REDACTED-pep2_sistope-1-2023.pdf",
+    "Source/REDACTED-pep2_sistope-1-2023.odg",
+    "Sistemas Operativos/Unidad 3",
+    "Estadística Computacional/PEP 2",
+    "Untitled.canvas",
+    "Sistemas Operativos/Unidad 2",
+    "Teoría de la Computación",
+    "Source",
+    "Sistemas Operativos/Unidad 1",
+    "Estadística Computacional/PEP 1"
+  ]
+}

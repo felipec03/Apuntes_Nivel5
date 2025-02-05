@@ -1,0 +1,75 @@
+## Administración de Memoria
+- [x] Requerimientos
+	- [x] Reubicación: Si se detiene, se reanuda en cualquier parte de memoria
+	- [x] Protección: Mem estática puede tener fault, trigger.
+	- [x] Compartición: Procesos pueden compartir áreas de memoria
+	- [x] Organización local: Programas=Módulos independientes, segmentación.
+	- [x] Organización física: Niveles (física, secundaria), movimiento lo hace SO.
+- [x] Posicionamiento fijo, no se usa. Se divide en particiones de mismo tamaño. Fragmentación interna.
+- [x] Particionamiento dinámico -> fragmentación externa
+	- [x] Best fit
+	- [x] First fit
+	- [x] Worst fit
+- [x] Método buddy -> fragmentación interna
+- [x] Tipos de direcciones
+	- [x] Lógica -> Se debe traducir a física := Virtual
+	- [x] Física
+	- [x] Relativa
+- [ ] **Paginación**, marcos (bloques pequeños mismo tamaño) y páginas (bloques del mismo tamaño).
+- [ ] **Segmentación**, segmentos lógicos. Largo variable sin fragmentación interna, pero si externa. 
+	- [ ] Direccionamiento = NúmeroSegmento + Offset
+
+****
+## Memoria Virtual
+- [ ]  MV Con Paginación
+	- [ ] Esquema multinivel
+- [ ] Translation Lookaside Buffer
+	- [ ] Apunta a resolver necesidad de dos accesos a memoria, tabla de páginas y dato mismo
+	- [ ] Almacena mapeo de página
+	- [ ] Dada dirección virtual -> CPU examina TLB (asociativo); hit o miss.
+	- [ ] Si página no está en Memoria Principal, es page fault -> Se actualiza.
+- [ ] Paginación en MV
+	- [ ] Esquema multinivel
+	- [ ] TLB: 
+	- [ ] Tamaño de páginas
+- [ ] Segmentación en MV: Particiona memoria virtual y real en segmentos
+	- [ ] Tabla de segmentación: Dirección en memoria real del segmento
+- [ ] Políticas de reemplazo
+	- [ ] Óptimo: Sabe el futuro
+	- [ ] LRU: Página no referenciada en máximo tiempo, mira al pasado.
+	- [ ] FIFO: Página que lleva más tiempo en memoria
+	- [ ] Política de reloj: aproximación de LRU, bit de uso.
+	- [ ] Belady: + número de páginas, aumenta fallos.
+- [ ] Buffering de página -> Modificados, No modificados
+- [ ] Conjunto residente: 
+	- [ ] Número fijo de marcos x proceso / Page fault -> Se reemplaza página
+	- [ ] Número variable de marcos / OS -> Aumenta si hay mucho page fault
+- [ ] Política de Limpieza, si página es modificada -> se escribe a disco
+	- [ ] Por demanda: Cuando sea seleccionada, implica dos transferencias
+	- [ ] Pre-limpieza: Se eligen páginas por lote y se escriben a disco.
+- [ ] Control de carga y Trashing
+	- [ ] Se indica cantidad de procesos en memoria principal
+	- [ ] Si son muchos, y todos acceden a I/O -> Conjunto Residente es pequeño, alta tasa de page fault -> produce trashing (espacio real sobrecargado, mucho page fault).
+- [ ] Suspensión de procesos: Que procesos residentes se bloquean
+	- [ ] Prioridad baja
+	- [ ] Produce fallo
+	- [ ] Último proceso activado
+	- [ ] Proceso más grande
+
+****
+## Administración de I/O y RAID
+- [ ] Tres formas de I/O
+	- [ ] Programado
+	- [ ] Basado en interrupciones
+	- [ ] Acceso directo a memoria (**DMA**): Importante
+- [ ] DMA: Procesador delega operaciones de I/O a módulo DMA
+- [ ] I/O Buffering: lectura anticipada de datos
+- [ ] ...
+- [ ] RAID: Arreglo Redundante de Discos Independientes
+	- [ ] RAID 0: $n$ discos = $n$ stripes = 1 stripe, se distribuyen round robin. 
+	- [ ] RAID 1: Espejo, discos físicos requiere $2n$, para redundancia total.
+	- [ ] RAID 2: Código de Hamming, no se usa en práctica.
+	- [ ] RAID 3: Bit paridad
+	- [ ] RAID 4: Bloque paridad
+	- [ ] RAID 5: Bloque paridad distribuido, necesita $n+1$ discos.
+	- [ ] RAID 6: Dual, requiere $n+2$ discos.
